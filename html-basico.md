@@ -4,6 +4,10 @@
 > 3. Formas de modificar el texto
 > 4. Crear listas
 > 5. Crear tablas
+> 6. Multimedia (Fotos y videos)
+> 7. Formularios y botones
+> # Notas extras
+> 1. Cual es la diferencia entre input(submit) y button
 
 > # 1. Introduccion a HTML
 - **DOCTYPE:** Indica la version de html.
@@ -113,7 +117,40 @@
         </tr>
       </table>
 ```
+> # 6. Multimedia
+- Insertar una imagen
+```html
+<img src="direccion_de_la_imagen" alt="Texto alternativo">
+```
+> # 7. Formularios y botones
+- **form:** Crea un formulario
+- **input:** Campo para introducir datos
+- **Type:** Typo de input
+- **label:** El titulo del input
+- **Textarea:** Campo para introducir mucho teto
+- **Button:** Para crear un boton 
+```html
+<form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="number" id="name" name="name">
 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <input type="submit" value="Submit">
+</form>
+```
+- Insertar botones
+```html
+<button>Click</button>
+```
+
+
+> # Notas Extras
+#### 1. Cual es la diferencia entre un input, submit y button.
+- **Input:** Se utiliza para recibir datos del usuario contraseñas, usuario etc.
+- **Submit:** Se utiliza para enviar formularios a la pagina de destino.
+- **Button:** Se utilizan para iniciar una accion, como enviar un formulario, cambiar de pagina, entre otros.
 
 
 
