@@ -33,7 +33,9 @@
 </html>
 ```
 > # 2. Estructura de HTML
+- **Div:** Contenedor general
 - **Header:** Es el encabezado de una página web, el cual contiene información básica sobre el sitio web, tales como el nombre del sitio, un logotipo, un tema o menú de navegación, etc.
+- **Main:** Etiqueta para contenido principal
 - **nav:** Nav es la propiedad que usamos para insertar la barra de navegacion.
 - **Seccion:** Una sección es una etiqueta HTML que se utiliza para agrupar contenido relacionado. Puede contener cualquier elemento HTML, como párrafos, enlaces, imágenes, encabezados, listas, tablas, etc.
 - **article:** Es un elemento HTML que sirve para indicar que una sección de un documento es un artículo, el cual generalmente consiste en contenido autónomo, como una noticia o una reseña.
@@ -118,9 +120,23 @@
       </table>
 ```
 > # 6. Multimedia
+> Paginas para mejorar nuestras imagenes
+> 1. Tiny PNG: Te comprime las imagenes
+> 2. Verefix: Retira metadatos de las imagenes
+> 3. Pexels: Pagina para descargar imagenes
 - Insertar una imagen
 ```html
 <img src="direccion_de_la_imagen" alt="Texto alternativo">
+```
+- Insertar video
+- **video:** Inserta un video
+- **control:** Sirve para proporcionarle a nuestro video los controles para poder controlarlo como el tamaño de la pantalla, play, pause etc.
+- **preload:** Nos sirve para que el video empiece a cargar en el momento en el que el usuario habra la web.
+- **source:** La etiqueta source se puede colocar dentro de una etiqueta varias veces para poder especificar diferentes rutas.
+```html
+<section>
+        <video src="" controls preload="auto"></video>
+</section>
 ```
 > # 7. Formularios y botones
 - **form:** Crea un formulario
@@ -140,9 +156,30 @@
         <input type="submit" value="Submit">
 </form>
 ```
+> - Autocompletar y require en formularios
+- **placeholder:** Es el valor que quieres que tenga nuestro input
+- **span:** Es el nombre que tendra nuestro formulario
+- **autocomplete:** Es la propiedad que dejara guardar valores
+- **require:** No dejara avanzar si este campo no se responde
+```html
+<form action="">
+        <label for="nombre">
+            <span>Cual es tu nombre</span>
+            <input type="text" name="nombre" 
+            id="nombre" autocomplete="name" required placeholder="Tu nombre">
+        </label>
+</form>
+```
+
+
 - Insertar botones
 ```html
 <button>Click</button>
+```
+> # 8. Etiquetas con propiedades
+```html
+<!--No tiene ningún efecto en la estructura de la página web, pero se utiliza a menudo para darle estilo visual a determinados elementos.-->
+<span></span>
 ```
 
 
